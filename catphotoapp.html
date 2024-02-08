@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main> <!-- helps in seo -->
+ <h1>CatPhotoApp</h1>
+ <section>
+ <h2> Cat Photos</h2>
+ <p>See more <a target="_blank" href="https://freecatphotoapp.com">cat photos</a> in our gallery.</p>
+ <a href="https://freecatphotoapp.com">link to cat pictures</a>  
+ <!--TODO: Add link to cat photos -->
+</main>
+<img>
+<a href="https://freecatphotoapp.com" >
+<img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back.">
+</a>
+</section>
+<section>
+    <h2>Cat Lists</h2>
+    <h3>Things cats love:</h3>
+    <ul>
+        <li>cat nip</li>
+        <li>laser pointers</li>
+        <li>lasagna</li>
+      </ul>
+      <figure>
+          <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="A slice of lasagna on a plate.">
+          <figcaption> Cats <em>love</em> lasagna. </figcaption>
+        </figure>
+        <h3>Top 3 things cats hate:</h3>
+        <ol>
+            <li>flea treatment</li>
+            <li>thunder</li>
+            <li>other cats</li>
+            </ol>
+            <figure>
+                <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt="Five cats looking around a field.">
+            <figcaption>cats <strong>hate</strong> other cats.</figcaption>
+            </figure>
+  </section>
+  <section>
+    <h2>cat form</h2>
+    <!--The action attribute indicates where form data should be sent. For example, <form action="/submit-url"></form> 
+        tells the browser that the form data should be sent to the path /submit-url. -->
+        <form action="https://freecatphotoapp.com/submit-cat-photo">
+            <fieldset>
+                <legend> Is your cat an indoor or outdoor cat?</legend>
+                 <label><input id="indoor" type="radio" name="indoor-outdoor" value="indoor"> Indoor</label>
+                 <label><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label>
+               </fieldset>
+            <input type="text" name="catphotourl" placeholder="cat photo URL" required>
+            <!--you must give the text field a name attribute and assign it a value to represent the data being submitted. For example, 
+                you could use the following syntax for an email address text field: <input type="text" name="email">.-->
+            
+                <!-- o prevent a user from submitting your form when required information is missing, you need to add the 
+                required attribute to an input element. There's no need to set a value to the required attribute. 
+                Instead, just add the word required to the input element, making sure there is space between it and 
+                other attributes.-->
+
+                <!--he default behavior of clicking a form button without any attributes submits the form to the 
+                    location specified in the form's action attribute.-->
+
+                <!--Even though you added your button below the text input, they appear next to each other on the page. 
+                    That's because both input and button elements are inline elements, which don't appear on new lines.-->
+                <!--The legend element acts as a caption for the content in the fieldset element. 
+                    It gives users context about what they should enter into that part of the form.-->
+        </form>
+  </section>
+</body>
+</html>
